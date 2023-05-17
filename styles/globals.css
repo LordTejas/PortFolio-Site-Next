@@ -18,7 +18,7 @@
 
 /* Rest of your CSS styles */
 body {
-  @apply bg-gray-100
+  background-color: snow;
 }
 
 @media screen and (max-width: 640px) {
@@ -48,16 +48,3 @@ body {
 .flex_row {
   @apply flex flex-row justify-center
 }
-
-/* @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.bg-animation {
-  animation: spin 5s infinite linear;
-} */

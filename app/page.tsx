@@ -1,10 +1,13 @@
 import { NavBar } from "@/components";
+import NameCard from "@/components/NameCard";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center">
+    <main className="flex min-h-screen flex-col align-center p-2">
       <NavBar />
-      <h1 className="text-4xl">Home Page</h1>
+
+      <NameCard />
+      
     </main>
-  )
+  );
 }

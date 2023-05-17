@@ -1,3 +1,4 @@
 import DropMenu from "./DropMenu";
+import DropMenuItem from "./DropMenuItem";
 
-export default DropMenu;
+export {DropMenu, DropMenuItem};

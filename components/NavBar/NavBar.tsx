@@ -2,25 +2,53 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { RxDashboard } from "react-icons/rx";
+import {DropMenu, DropMenuItem} from "../DropMenu";
+import { useState } from "react";
 
 export default function NavBar({}) {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  const handleToggleMenu = () => {
+    setToggleMenu((prev) => !prev);
+  };
+
   return (
     <nav className="flex justify-between w-full mb-2 p-2 bg-white">
       {/* Nav Logo */}
       <div>
         <Link href="/" className="flex justify-between align-center gap-2">
-          <Image src="/assets/icons/home.png" alt="Home Logo" width={28} height={28} className="object-contain" />
+          <Image
+            src="/assets/icons/home.png"
+            alt="Home Logo"
+            width={28}
+            height={28}
+            className="object-contain"
+          />
           <p className="hidden sm:inline text-xl text-normal">PortFolio</p>
         </Link>
       </div>
 
       {/* Mobile View */}
       <div className="sm:hidden flex">
-        <div className="flex_row gap-2">
-        <Image src="/assets/icons/menu.png" alt="Menu Icon" width={28} height={28} className="object-contain" />
-          <p className="text-xl text-normal"></p>
-        </div>
+        <DropMenu
+          toggleShow={
+            <div className="flex_row gap-2 relative">
+              <Image
+                src="/assets/icons/menu.png"
+                alt="Menu Icon"
+                width={28}
+                height={28}
+                className="object-contain"
+              />
+            </div>
+          }
+          toggleOption={toggleMenu}
+          toggleOptionHandle={handleToggleMenu}
+        >
+          <DropMenuItem href="/">Home</DropMenuItem>
+          <DropMenuItem href="/dashboard">DashBoard</DropMenuItem>
+          <DropMenuItem href="/resume">View Resume</DropMenuItem>
+        </DropMenu>
       </div>
 
       {/* Desktop View */}
