@@ -8,7 +8,7 @@ export default function NameCard ({}: INameCardProps) {
         {/* Video Background */}
         <div className="relative w-full h-full">
           <video
-            className="absolute w-full h-full object-top object-cover"
+            className="w-full h-full object-top object-cover rounded-lg"
             autoPlay
             muted
             loop
@@ -21,7 +21,7 @@ export default function NameCard ({}: INameCardProps) {
         </div>
 
         {/* Content */}
-        <div className="absolute flex flex-col items-center justify-center w-full h-96 font-bold text-2xl md:text-4xl xl:text-6xl text-bold text-center text-white">
+        <div className="absolute inset-12 h-96 flex flex-col items-center justify-center font-bold text-2xl md:text-3xl xl:text-6xl text-center text-white">
           <p className="">
             Hello, I am{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-600">
