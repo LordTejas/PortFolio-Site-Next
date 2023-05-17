@@ -6,18 +6,21 @@ import { RxDashboard } from "react-icons/rx";
 
 export default function NavBar({}) {
   return (
-    <nav className="flex justify-between w-full mb-2 p-2">
+    <nav className="flex justify-between w-full mb-2 p-2 bg-white">
       {/* Nav Logo */}
       <div>
-        <Link href="/" className="flex justify-between align-center">
-          <RxDashboard className="text-2xl mr-1" />
-          <p className="logo_text">Tejas</p>
+        <Link href="/" className="flex justify-between align-center gap-2">
+          <Image src="/assets/icons/home.png" alt="Home Logo" width={28} height={28} className="object-contain" />
+          <p className="hidden sm:inline text-xl text-normal">PortFolio</p>
         </Link>
       </div>
 
       {/* Mobile View */}
       <div className="sm:hidden flex">
-        <div>Menu</div>
+        <div className="flex_row gap-2">
+        <Image src="/assets/icons/menu.png" alt="Menu Icon" width={28} height={28} className="object-contain" />
+          <p className="text-xl text-normal"></p>
+        </div>
       </div>
 
       {/* Desktop View */}
