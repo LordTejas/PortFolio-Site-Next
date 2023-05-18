@@ -78,6 +78,11 @@ const Skills: ISkill[] = [
     iconUrl: "/assets/icons/https.png",
   },
   {
+    name: "Docker",
+    type: "backend",
+    iconUrl: "/assets/icons/docker.png",
+  },
+  {
     name: "Git",
     type: "backend",
     iconUrl: "/assets/icons/git.svg",

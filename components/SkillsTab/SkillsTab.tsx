@@ -7,7 +7,7 @@ export interface ISkillsTabProps {}
 export default function SkillsTab ({}: ISkillsTabProps) {
 
   return (
-    <section className="flex flex-col gap-4 my-2 rounded-xl bg-violet-100 shadow-lg p-4 md:p-8">
+    <section className="flex flex-col gap-4 my-2 rounded-xl bg-violet-200 shadow-lg p-4 md:p-8">
       <div className="mb-4">
         <h1 className="font-extrabold text-4xl text-indigo-400">Tech Stack</h1>
       </div>
