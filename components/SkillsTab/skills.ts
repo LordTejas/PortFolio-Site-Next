@@ -18,6 +18,11 @@ const Skills: ISkill[] = [
     iconUrl: "/assets/icons/java.png",
   },
   {
+    name: "Go Lang",
+    type: "backend",
+    iconUrl: "/assets/icons/golang.svg",
+  },
+  {
     name: "JavaScript",
     type: "frontend",
     iconUrl: "/assets/icons/js.png",

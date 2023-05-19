@@ -1,4 +1,4 @@
-import { NavBar, NameCard, SkillsTab } from "@/components";
+import { NavBar, NameCard, SkillsTab, ServicesTab } from "@/components";
 
 export default function Home() {
   return (
@@ -9,6 +9,8 @@ export default function Home() {
       <NameCard />
 
       <SkillsTab />
+
+      <ServicesTab />
       
     </main>
   );
