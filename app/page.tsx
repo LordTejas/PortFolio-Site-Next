@@ -2,7 +2,7 @@ import { NavBar, NameCard, SkillsTab, ServicesTab } from "@/components";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col align-center p-2">
+    <main className="flex min-h-screen flex-col align-center">
       
       <NavBar />
 
@@ -11,7 +11,7 @@ export default function Home() {
       <SkillsTab />
 
       <ServicesTab />
-      
+
     </main>
   );
 }
