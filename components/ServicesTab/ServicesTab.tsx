@@ -9,13 +9,12 @@ export interface IServicesTabProps {
 
 export default function ServicesTab({ }: IServicesTabProps) {
 
-  const [currentTab, setCurrentTab] = useState<number>(0);
+  const [currentTabIndex, setCurrentTabIndex] = useState<number>(0);
 
-  
     return (
       <section className="flex flex-row md:flex-col w-full h-full bg-white">
-        <ServiceViewPanel />
-        <ServiceView />        
+        <ServiceViewPanel setCurrentTabIndex={setCurrentTabIndex} />
+        <ServiceView currentTabIndex={currentTabIndex} />      
       </section>
     );
 }

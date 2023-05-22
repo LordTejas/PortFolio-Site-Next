@@ -14,7 +14,7 @@ export default function ServiceViewPanelTile({
 }: IServiceViewPanelTileProps) {
   return (
     <div
-      className="border-r border-b text-2xl text-center p-3"
+      className="border-r border-b text-2xl text-center md: w-full p-3"
       onClick={() => {}}
     >
       {/* Desktop View */}
@@ -37,7 +37,7 @@ export default function ServiceViewPanelTile({
           </h1>
         </div>
 
-        <Image src={imageShow} alt="T" height={48} width={48}></Image>
+        <Image src={imageShow} alt="T" height={48} width={48} className="hidden sm:block"></Image>
       </div>
     </div>
   );

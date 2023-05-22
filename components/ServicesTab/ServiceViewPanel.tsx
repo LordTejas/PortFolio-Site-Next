@@ -4,14 +4,15 @@ import ServiceData from './ServicesData';
 
 
 export interface IServiceViewPanelProps {
+  setCurrentTabIndex: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export default function ServiceViewPanel ({ }: IServiceViewPanelProps) {
- 
+export default function ServiceViewPanel ({ setCurrentTabIndex }: IServiceViewPanelProps) {
+
     
-    
+
     return (
-    <div className="flex flex-col md:flex-row w-full bg-white shadow-xl">
+    <div className="flex-1 flex flex-col md:flex-row w-full bg-white shadow-xl">
         {ServiceData && ServiceData.map(ServiceViewPanelTile)}
     </div>
   );
